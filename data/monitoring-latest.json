@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-05-07 06:40 UTC",
+  "date": "2026-05-07",
+  "total": 6,
+  "success": 4,
+  "failed": 2,
+  "sources": {
+    "openai_news": {
+      "url": "https://openai.com/news/",
+      "ok": false,
+      "status": 403,
+      "latency_ms": 71,
+      "error": "HTTP 403"
+    },
+    "openai_ads": {
+      "url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/",
+      "ok": false,
+      "status": 403,
+      "latency_ms": 60,
+      "error": "HTTP 403"
+    },
+    "carb_act": {
+      "url": "https://ww2.arb.ca.gov/our-work/programs/advanced-clean-trucks",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 156,
+      "error": null
+    },
+    "carb_fact": {
+      "url": "https://ww2.arb.ca.gov/resources/fact-sheets/advanced-clean-trucks-fact-sheet",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 159,
+      "error": null
+    },
+    "daimler": {
+      "url": "https://www.daimlertruck.com/en/innovation/powertrain/our-eportfolio",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 1022,
+      "error": null
+    },
+    "torc": {
+      "url": "https://torc.ai/",
+      "ok": true,
+      "status": 200,
+      "latency_ms": 306,
+      "error": null
+    }
+  }
+}
