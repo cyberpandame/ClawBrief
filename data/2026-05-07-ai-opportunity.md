@@ -1,6 +1,6 @@
 # 商用情报简报 · 2026-05-07（自动抓取实版）
 
-- 刷新时间：2026-05-07 06:40 UTC
+- 刷新时间：2026-05-07 10:56 UTC
 - 抓取监测：[/monitoring.html](../monitoring.html)
 - 原则：仅保留可核验数据；无证据不写
 
@@ -33,12 +33,12 @@
 ## D. 抓取结果摘要
 
 - 总源数：6
-- 成功：4
-- 失败：2
+- 成功：6
+- 失败：0
 
-- openai_news: status=403, latency=71ms HTTP 403
-- openai_ads: status=403, latency=60ms HTTP 403
-- carb_act: status=200, latency=156ms 
-- carb_fact: status=200, latency=159ms 
-- daimler: status=200, latency=1022ms 
-- torc: status=200, latency=306ms 
+- openai_news: status=200, latency=323ms 
+- openai_ads: status=200, latency=386ms 
+- carb_act: status=200, latency=257ms 
+- carb_fact: status=200, latency=260ms 
+- daimler: status=200, latency=1015ms 
+- torc: status=200, latency=313ms 
