@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClawBrief</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif; margin: 32px auto; max-width: 900px; padding: 0 16px; color: #1f2937; }
+    h1 { margin-bottom: 8px; }
+    .muted { color:#6b7280; }
+    .layout { display:grid; grid-template-columns: 260px 1fr; gap: 20px; }
+    .panel { border:1px solid #e5e7eb; border-radius: 12px; padding: 14px; }
+    ul { margin: 0; padding-left: 18px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 800px) { .layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>ClawBrief 🐾</h1>
+  <p class="muted">Daily at 09:00 UTC · Markdown as source of truth</p>
+
+  <div class="layout">
+    <aside class="panel">
+      <strong>Entries</strong>
+      <ul id="list"></ul>
+    </aside>
+    <main class="panel">
+      <article id="content">Loading…</article>
+    </main>
+  </div>
+
+  <script type="module">
+    import { marked } from 'https://esm.sh/marked@13.0.2';
+
+    const entries = [
+      '2026-05-07.md'
+    ];
+
+    const listEl = document.getElementById('list');
+    const contentEl = document.getElementById('content');
+
+    function qs(name) {
+      const u = new URL(window.location.href);
+      return u.searchParams.get(name);
+    }
+
+    async function render(file) {
+      const res = await fetch(`./data/${file}`);
+      if (!res.ok) {
+        contentEl.innerHTML = `<p>Failed to load: ${file}</p>`;
+        return;
+      }
+      const md = await res.text();
+      contentEl.innerHTML = marked.parse(md);
+    }
+
+    entries.forEach(file => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = `?d=${encodeURIComponent(file)}`;
+      a.textContent = file.replace('.md','');
+      li.appendChild(a);
+      listEl.appendChild(li);
+    });
+
+    const selected = qs('d');
+    const target = entries.includes(selected) ? selected : entries[0];
+    render(target);
+  </script>
+</body>
+</html>
