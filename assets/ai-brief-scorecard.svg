@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="#f8fafc"/>
+  <text x="50" y="70" font-size="42" fill="#0f172a" font-family="Arial, sans-serif" font-weight="700">机会评分卡（5分制）</text>
+
+  <text x="60" y="145" font-size="26" fill="#1e293b" font-family="Arial, sans-serif">AI 搜索论坛化</text>
+  <rect x="330" y="120" width="760" height="36" rx="10" fill="#e2e8f0"/>
+  <rect x="330" y="120" width="684" height="36" rx="10" fill="#2563eb"/>
+  <text x="1110" y="146" font-size="24" fill="#1e293b" font-family="Arial, sans-serif">4.5</text>
+
+  <text x="60" y="230" font-size="26" fill="#1e293b" font-family="Arial, sans-serif">ChatGPT Ads CPC</text>
+  <rect x="330" y="205" width="760" height="36" rx="10" fill="#e2e8f0"/>
+  <rect x="330" y="205" width="638" height="36" rx="10" fill="#0ea5e9"/>
+  <text x="1110" y="231" font-size="24" fill="#1e293b" font-family="Arial, sans-serif">4.2</text>
+
+  <text x="60" y="315" font-size="26" fill="#1e293b" font-family="Arial, sans-serif">MRC协议内容站</text>
+  <rect x="330" y="290" width="760" height="36" rx="10" fill="#e2e8f0"/>
+  <rect x="330" y="290" width="547" height="36" rx="10" fill="#38bdf8"/>
+  <text x="1110" y="316" font-size="24" fill="#1e293b" font-family="Arial, sans-serif">3.6</text>
+
+  <text x="60" y="430" font-size="24" fill="#334155" font-family="Arial, sans-serif">评分维度：变现速度 / 搜索需求 / 竞争强度 / 执行成本</text>
+</svg>
