@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#052e16"/><stop offset="100%" stop-color="#16a34a"/></linearGradient></defs>
+  <rect width="1200" height="520" fill="url(#g)"/>
+  <text x="64" y="110" fill="#fff" font-size="54" font-family="Arial, sans-serif" font-weight="700">新能源重卡情报板</text>
+  <text x="64" y="162" fill="#dcfce7" font-size="28" font-family="Arial, sans-serif">政策 · 商机 · 技术 · 自动驾驶（投资/方案整合）</text>
+  <rect x="64" y="210" width="1072" height="80" rx="14" fill="#14532d"/><text x="88" y="260" fill="#bbf7d0" font-size="30" font-family="Arial, sans-serif">政策：加州ACT持续推进，销售配比和车队报告机制明确</text>
+  <rect x="64" y="310" width="1072" height="80" rx="14" fill="#14532d"/><text x="88" y="360" fill="#bbf7d0" font-size="30" font-family="Arial, sans-serif">技术：eActros 600量产，LFP与600kWh+长途路线成主线</text>
+  <rect x="64" y="410" width="1072" height="80" rx="14" fill="#14532d"/><text x="88" y="460" fill="#bbf7d0" font-size="30" font-family="Arial, sans-serif">自动驾驶：Torc聚焦Freightliner Cascadia干线货运</text>
+</svg>
