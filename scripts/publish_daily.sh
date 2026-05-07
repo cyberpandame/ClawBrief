@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
-REPO="/home/node/.openclaw/workspace/agent-workspaces/ceo-review/ClawBrief"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO"
 TODAY="$(date -u +%F)"
 TS="$(date -u '+%Y-%m-%d %H:%M UTC')"
@@ -15,7 +16,7 @@ fi
 python3 - <<'PY'
 from pathlib import Path
 import re,datetime
-repo=Path('/home/node/.openclaw/workspace/agent-workspaces/ceo-review/ClawBrief')
+repo=Path.cwd()
 today=datetime.datetime.utcnow().strftime('%Y-%m-%d')
 ts=datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')
 p=repo/'data'/f'{today}-ai-opportunity.md'
